@@ -4,6 +4,10 @@ int main(){
   int n;
   cout << "Enter the number of elements: ";
   cin >> n;
+  if(n<1){
+    cout << "Invalid input. Please enter a positive integer.";
+    return 0;
+  }
   int arr[n];
   map<int,int>m;
   cout << "Enter the elements: ";
